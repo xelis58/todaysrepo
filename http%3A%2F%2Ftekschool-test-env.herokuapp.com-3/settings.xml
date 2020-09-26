@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="67a59d7a-2598-4293-8ca6-2fb37a5fc33b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://tekschool-test-env.herokuapp.com 3" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="67a59d7a-2598-4293-8ca6-2fb37a5fc33bfileName">http%3A%2F%2Ftekschool-test-env.herokuapp.com-3</con:setting>
+  </con:settings>
+  <con:definitionCache/>
+  <con:endpoints>
+    <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+  </con:endpoints>
+</con:interface>

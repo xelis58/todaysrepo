@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cc234a9b-7ee3-4a5c-b74d-366b6449be3e" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cc234a9b-7ee3-4a5c-b74d-366b6449be3efileName">TestCase-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="DataSource" id="1b0af91b-f20b-4d05-aecb-19a7657ee3bc">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Data Generator">
+        <con:configuration>
+          <generatedDataCount>10</generatedDataCount>
+          <generatorsTotalNumber>11</generatorsTotalNumber>
+          <lastSelectedProperty>7</lastSelectedProperty>
+          <GeneratorType0>NAME</GeneratorType0>
+          <PropertyName0>lastName</PropertyName0>
+          <repetitionCountlastName>0</repetitionCountlastName>
+          <repeatValueslastName>false</repeatValueslastName>
+          <NameTypeName0>LastName</NameTypeName0>
+          <NameGenderName0>Any</NameGenderName0>
+          <GeneratorType1>NAME</GeneratorType1>
+          <PropertyName1>middleName</PropertyName1>
+          <repetitionCountmiddleName>0</repetitionCountmiddleName>
+          <repeatValuesmiddleName>false</repeatValuesmiddleName>
+          <NameTypeName1>FirstName</NameTypeName1>
+          <NameGenderName1>Any</NameGenderName1>
+          <GeneratorType2>SET</GeneratorType2>
+          <PropertyName2>Gender</PropertyName2>
+          <repetitionCountGender>0</repetitionCountGender>
+          <repeatValuesGender>false</repeatValuesGender>
+          <ValueFromSetIsSequenceValueGender>false</ValueFromSetIsSequenceValueGender>
+          <ValueFromSetStringsGender>Male</ValueFromSetStringsGender>
+          <ValueFromSetStringsGender>Female</ValueFromSetStringsGender>
+          <GeneratorType3>SET</GeneratorType3>
+          <PropertyName3>Language</PropertyName3>
+          <repetitionCountLanguage>0</repetitionCountLanguage>
+          <repeatValuesLanguage>false</repeatValuesLanguage>
+          <ValueFromSetIsSequenceValueLanguage>false</ValueFromSetIsSequenceValueLanguage>
+          <ValueFromSetStringsLanguage>Single</ValueFromSetStringsLanguage>
+          <ValueFromSetStringsLanguage>Married</ValueFromSetStringsLanguage>
+          <ValueFromSetStringsLanguage>Divorced</ValueFromSetStringsLanguage>
+          <GeneratorType4>SET</GeneratorType4>
+          <PropertyName4>Title</PropertyName4>
+          <repetitionCountTitle>0</repetitionCountTitle>
+          <repeatValuesTitle>false</repeatValuesTitle>
+          <ValueFromSetIsSequenceValueTitle>false</ValueFromSetIsSequenceValueTitle>
+          <ValueFromSetStringsTitle>Mr</ValueFromSetStringsTitle>
+          <ValueFromSetStringsTitle>Ms</ValueFromSetStringsTitle>
+          <ValueFromSetStringsTitle>Mrs</ValueFromSetStringsTitle>
+          <GeneratorType5>SET</GeneratorType5>
+          <PropertyName5>Suffix</PropertyName5>
+          <repetitionCountSuffix>0</repetitionCountSuffix>
+          <repeatValuesSuffix>false</repeatValuesSuffix>
+          <ValueFromSetIsSequenceValueSuffix>false</ValueFromSetIsSequenceValueSuffix>
+          <ValueFromSetStringsSuffix>Junior</ValueFromSetStringsSuffix>
+          <ValueFromSetStringsSuffix>Senior</ValueFromSetStringsSuffix>
+          <ValueFromSetStringsSuffix>Sr</ValueFromSetStringsSuffix>
+          <ValueFromSetStringsSuffix>Jr</ValueFromSetStringsSuffix>
+          <GeneratorType6>SET</GeneratorType6>
+          <PropertyName6>Employment status</PropertyName6>
+          <repetitionCountEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>0</repetitionCountEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <repeatValuesEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>false</repeatValuesEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <ValueFromSetIsSequenceValueEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>false</ValueFromSetIsSequenceValueEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>Student</ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>Unemployed</ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>Employed</ValueFromSetStringsEmployment1bdf8fe344f94a89853fefddfbaeaa0bstatus>
+          <GeneratorType7>SET</GeneratorType7>
+          <PropertyName7>language</PropertyName7>
+          <repetitionCountlanguage>0</repetitionCountlanguage>
+          <repeatValueslanguage>false</repeatValueslanguage>
+          <ValueFromSetIsSequenceValuelanguage>false</ValueFromSetIsSequenceValuelanguage>
+          <ValueFromSetStringslanguage>Arabic</ValueFromSetStringslanguage>
+          <ValueFromSetStringslanguage>Berber</ValueFromSetStringslanguage>
+          <ValueFromSetStringslanguage>French</ValueFromSetStringslanguage>
+          <GeneratorType8>TIME</GeneratorType8>
+          <PropertyName8>DOB</PropertyName8>
+          <repetitionCountDOB>0</repetitionCountDOB>
+          <repeatValuesDOB>false</repeatValuesDOB>
+          <DateTimeDataGeneratorCustomFormatDOB/>
+          <DateTimeDataGeneratorFormatDOB>YYYY-MM-DDTHH:mm:ssZ (ISO-8601)</DateTimeDataGeneratorFormatDOB>
+          <DateTimeDataGeneratorIsSequentDOB>false</DateTimeDataGeneratorIsSequentDOB>
+          <DateTimeDataGeneratorStepDaysDOB>1</DateTimeDataGeneratorStepDaysDOB>
+          <DateTimeDataGeneratorStepHoursDOB>1</DateTimeDataGeneratorStepHoursDOB>
+          <DateTimeDataGeneratorStepMinsDOB>1</DateTimeDataGeneratorStepMinsDOB>
+          <DateTimeDataGeneratorStepSecondsDOB>1</DateTimeDataGeneratorStepSecondsDOB>
+          <DateTimeDataGeneratorMinDateDOB>442765176652</DateTimeDataGeneratorMinDateDOB>
+          <DateTimeDataGeneratorMaxDateDOB>1601129976652</DateTimeDataGeneratorMaxDateDOB>
+          <GeneratorType9>NAME</GeneratorType9>
+          <PropertyName9>firstName</PropertyName9>
+          <repetitionCountfirstName>0</repetitionCountfirstName>
+          <repeatValuesfirstName>false</repeatValuesfirstName>
+          <NameTypeName9>FirstName</NameTypeName9>
+          <NameGenderName9>Any</NameGenderName9>
+          <GeneratorType10>SET</GeneratorType10>
+          <PropertyName10>maritalStt</PropertyName10>
+          <repetitionCountmaritalStt>0</repetitionCountmaritalStt>
+          <repeatValuesmaritalStt>false</repeatValuesmaritalStt>
+          <ValueFromSetIsSequenceValuemaritalStt>false</ValueFromSetIsSequenceValuemaritalStt>
+          <ValueFromSetStringsmaritalStt>Single</ValueFromSetStringsmaritalStt>
+          <ValueFromSetStringsmaritalStt>Married</ValueFromSetStringsmaritalStt>
+          <ValueFromSetStringsmaritalStt>Divorced</ValueFromSetStringsmaritalStt>
+          <escapeSpaceSequence>1bdf8fe344f94a89853fefddfbaeaa0b</escapeSpaceSequence>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>firstName</con:property>
+      <con:property>lastName</con:property>
+      <con:property>middleName</con:property>
+      <con:property>Gender</con:property>
+      <con:property>Title</con:property>
+      <con:property>Suffix</con:property>
+      <con:property>Employment status</con:property>
+      <con:property>DOB</con:property>
+      <con:property>language</con:property>
+      <con:property>maritalStt</con:property>
+      <con:completeLastOperation>true</con:completeLastOperation>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="REST Request" id="da8bf6df-9bf7-41e7-a1b3-f8dfb9780719">
+    <con:settings/>
+    <con:config service="http://tekschool-test-env.herokuapp.com 1" resourcePath="/jpa/users" methodName="createUser" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="REST Request" id="7304001f-d071-431b-ba91-e6d7761170aa" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request>{\r
+   "birthDate" : "${DataSource#DOB}",\r
+   "employmentStatus" : "${DataSource#Employment status}",\r
+   "firstName" : "${DataSource#firstName}",\r
+   "gender" : "${DataSource#Gender}",\r
+   "languagePref" : "${DataSource#Language}",\r
+   "lastName" : "${DataSource#lastName}",\r
+   "maritalStatus" : "${DataSource#maritalStt}",\r
+   "middleName" : "${DataSource#middleName}",\r
+   "suffix" : "${DataSource#Suffix}",\r
+   "title" : "${DataSource#Title}"\r
+}</con:request>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="14dcf6c3-836a-4690-93d1-f4c43ea2a436" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="478cb125-fac0-4d6e-8f89-c483d4996564" name="Response SLA">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="MessageContentAssertion" id="6f6a5d67-3cb2-4bab-9a6b-f9629eba76fe" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:id[1]</con:xpath>
+              <con:element>id</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>1937</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:lastName[1]</con:xpath>
+              <con:element>lastName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['lastName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:suffix[1]</con:xpath>
+              <con:element>suffix</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['suffix']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:gender[1]</con:xpath>
+              <con:element>gender</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['gender']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:maritalStatus[1]</con:xpath>
+              <con:element>maritalStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['maritalStatus']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:employmentStatus[1]</con:xpath>
+              <con:element>employmentStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['employmentStatus']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:birthDate[1]</con:xpath>
+              <con:element>birthDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['birthDate']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:languagePref[1]</con:xpath>
+              <con:element>languagePref</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['languagePref']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:secondaryUser[1]</con:xpath>
+              <con:element>secondaryUser</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:secondaryUser[1]/@null</con:xpath>
+              <con:element>@null</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>true</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:firstName[1]</con:xpath>
+              <con:element>firstName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['firstName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:middleName[1]</con:xpath>
+              <con:element>middleName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['middleName']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users';
+//ns1:Response[1]/ns1:title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${REST Request#RawRequest#$['title']}</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="http://tekschool-test-env.herokuapp.com/jpa/users">
+   <id>1937</id>
+   <firstName>Ciara</firstName>
+   <title>Ms</title>
+   <middleName>Sacha</middleName>
+   <lastName>Donaldson</lastName>
+   <suffix>Senior</suffix>
+   <gender>Male</gender>
+   <maritalStatus>Single</maritalStatus>
+   <employmentStatus>Student</employmentStatus>
+   <birthDate>1998-06-10T11:33:53.000+00:00</birthDate>
+   <languagePref>Arabic</languagePref>
+   <secondaryUser null="true"/>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="a37e8e3b-5118-4d00-a547-623be035b5bb" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>REST Request</targetStep>
+      <discardResults>true</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

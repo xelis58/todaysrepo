@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="" path="/jpa/users" id="d9f41d3a-0942-4890-b07e-869a60bb285e" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="d9f41d3a-0942-4890-b07e-869a60bb285efileName">%2Fjpa%2Fusers</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="createUser" id="55a63aff-75c1-4efd-9e73-18f330acc083" method="POST">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:element xmlns:user="http://tekschool-test-env.herokuapp.com/jpa/users">user:Response</con:element>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="FAULT">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:element xmlns:user="http://tekschool-test-env.herokuapp.com/jpa/users">user:Fault</con:element>
+    </con:representation>
+    <con:request name="Request 1" id="7304001f-d071-431b-ba91-e6d7761170aa" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+      <con:request>{
+      "id" : 1930,
+      "firstName" : "lina",
+      "title" : "Mr.",
+      "middleName" : "Thames",
+      "lastName" : "Logan",
+      "suffix" : "Senior",
+      "gender" : "Male",
+      "maritalStatus" : "Single",
+      "employmentStatus" : "Retired",
+      "birthDate" : "1960-01-15T20:43:33.000+00:00",
+      "languagePref" : "English",
+      "secondaryUser" : null
+   }</con:request>
+      <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>
