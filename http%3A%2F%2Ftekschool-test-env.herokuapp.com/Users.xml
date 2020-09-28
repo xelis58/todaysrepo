@@ -49,7 +49,7 @@
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
       <con:parameters>
-        <con:entry key="id" value="1937"/>
+        <con:entry key="id" value="1939"/>
       </con:parameters>
       <con:parameterOrder>
         <con:entry>id</con:entry>

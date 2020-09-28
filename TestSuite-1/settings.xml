@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="e28b97b4-6550-4ceb-8db5-7a97d7e0c608fileName">TestSuite-1</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:runType>SEQUENTIAL</con:runType>
   <con:properties/>
   <con:reportParameters/>

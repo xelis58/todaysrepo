@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4fbe3793-820f-46bc-9dc8-26f99d0fe7c2" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="TestCase 2" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4fbe3793-820f-46bc-9dc8-26f99d0fe7c2fileName">TestCase-2</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="getSecondryUser" id="fb5c4db6-fd56-47e1-b862-96756f2dcab8">
+    <con:settings/>
+    <con:config service="http://tekschool-test-env.herokuapp.com 2" resourcePath="/jpa/users/byparam" methodName="getUserByParam" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getSecondryUser" id="e74c02ed-f453-489f-b5ad-ce79bc3fb4f0" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users/byparam</con:originalUri>
+        <con:assertion type="MessageContentAssertion" id="fd5a882d-3f7e-4995-8a33-bcd4344632bb" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:id[1]</con:xpath>
+              <con:element>id</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>exists</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue/>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:firstName[1]</con:xpath>
+              <con:element>firstName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['firstName']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['title']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:middleName[1]</con:xpath>
+              <con:element>middleName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['middleName']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:lastName[1]</con:xpath>
+              <con:element>lastName</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['lastName']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:suffix[1]</con:xpath>
+              <con:element>suffix</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['suffix']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:gender[1]</con:xpath>
+              <con:element>gender</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['gender']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:maritalStatus[1]</con:xpath>
+              <con:element>maritalStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['maritalStatus']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:employmentStatus[1]</con:xpath>
+              <con:element>employmentStatus</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['employmentStatus']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:birthDate[1]</con:xpath>
+              <con:element>birthDate</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['birthDate']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:languagePref[1]</con:xpath>
+              <con:element>languagePref</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>${#[TestSuite 1#TestCase 1#REST Request]#Response#$['languagePref']}</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:secondaryUser[1]</con:xpath>
+              <con:element>secondaryUser</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:secondaryUser[1]/@null</con:xpath>
+              <con:element>@null</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>true</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:rel[1]</con:xpath>
+              <con:element>rel</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>all-users</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>declare namespace ns1='http://tekschool-test-env.herokuapp.com/jpa/users/byparam';
+//ns1:Response[1]/ns1:links[1]/ns1:e[1]/ns1:href[1]</con:xpath>
+              <con:element>href</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>false</con:enabled>
+              <con:expectedValue>http://tekschool-test-env.herokuapp.com/jpa/users</con:expectedValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<Response xmlns="http://tekschool-test-env.herokuapp.com/jpa/users/byparam">
+   <id>1938</id>
+   <firstName>Ali</firstName>
+   <title>Ms</title>
+   <middleName>Jeanette</middleName>
+   <lastName>Russo</lastName>
+   <suffix>Sr</suffix>
+   <gender>Male</gender>
+   <maritalStatus>Married</maritalStatus>
+   <employmentStatus>Unemployed</employmentStatus>
+   <birthDate>2008-01-06T01:55:15.000+00:00</birthDate>
+   <languagePref>Arabic</languagePref>
+   <secondaryUser null="true"/>
+   <links>
+      <e>
+         <rel>all-users</rel>
+         <href>http://tekschool-test-env.herokuapp.com/jpa/users</href>
+      </e>
+   </links>
+</Response>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${#[TestSuite 1#TestCase 1#REST Request]#Response#$['id']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="deleteSecondryUser" id="44cdba9d-07de-45f7-8532-014d97d7665e">
+    <con:settings/>
+    <con:config service="http://tekschool-test-env.herokuapp.com" resourcePath="/jpa/users/byParam" methodName="deleteUserByPara" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="deleteSecondryUser" id="748e8abe-5779-4fcb-be16-b9a68c6a3069" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="6e6af64e-2a54-4396-9aaa-da4c6e98fcc6" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="5a0a0eab-0fa8-4820-867f-3b3ddb704a29" name="Response SLA">
+          <con:configuration>
+            <SLA>200</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${getSecondryUser#Response#$['id']}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="getSecondryUser 2" id="4d7e6607-3e6c-4a7a-a7bf-f4cf6e01f175">
+    <con:settings/>
+    <con:config service="http://tekschool-test-env.herokuapp.com 2" resourcePath="/jpa/users/byparam" methodName="getUserByParam" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="getSecondryUser 2" id="e74c02ed-f453-489f-b5ad-ce79bc3fb4f0" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://tekschool-test-env.herokuapp.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://tekschool-test-env.herokuapp.com/jpa/users/byparam</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="id" value="${deleteSecondryUser#Response}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>id</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

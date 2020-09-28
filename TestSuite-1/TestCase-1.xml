@@ -11,7 +11,7 @@
         <con:configuration>
           <generatedDataCount>10</generatedDataCount>
           <generatorsTotalNumber>11</generatorsTotalNumber>
-          <lastSelectedProperty>7</lastSelectedProperty>
+          <lastSelectedProperty>8</lastSelectedProperty>
           <GeneratorType0>NAME</GeneratorType0>
           <PropertyName0>lastName</PropertyName0>
           <repetitionCountlastName>0</repetitionCountlastName>
@@ -131,7 +131,7 @@
    "employmentStatus" : "${DataSource#Employment status}",\r
    "firstName" : "${DataSource#firstName}",\r
    "gender" : "${DataSource#Gender}",\r
-   "languagePref" : "${DataSource#Language}",\r
+   "language" : "${DataSource#Language}",\r
    "lastName" : "${DataSource#lastName}",\r
    "maritalStatus" : "${DataSource#maritalStt}",\r
    "middleName" : "${DataSource#middleName}",\r
